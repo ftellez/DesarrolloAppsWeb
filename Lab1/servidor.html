@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<style type="text/css">
+body {color:#663300; background-color:#FFFFCC}
+table
+{
+border-collapse:collapse;
+}
+td {border:1px solid black; padding:10px}
+</style>
+<title>Servidor de prueba</title>
+<script type="text/javascript">
+function getArgs() {
+   var resumen ="<h2>Resumen de los datos de la forma</h2><table>";
+   resumen+="<tr><th>Variable</th><th>Valor</th></tr>";
+   var query = location.search.substring(1);
+   var pares= query.split("&");
+   for(var i = 0; i < pares.length; i++) {
+      var pos = pares[i].indexOf('=');
+      if (pos == -1) continue;
+      var name = pares[i].substring(0,pos);
+      name = name.replace(/%C3%A1/g,"&aacute;");
+      name = name.replace(/%E1/g,"&aacute;");
+      name = name.replace(/%C3%A9/g,"&eacute;");
+      name = name.replace(/%E9/g,"&eacute;");
+      name = name.replace(/%C3%AD/g,"&iacute;");
+      name = name.replace(/%ED/g,"&iacute;");
+      name = name.replace(/%C3%B3/g,"&oacute;");
+      name = name.replace(/%F3/g,"&oacute;");
+      name = name.replace(/%C3%BA/g,"&uacute;");
+      name = name.replace(/%FA/g,"&uacute;");
+      name = name.replace(/%C3%B1/g,"&ntilde;");
+      name = name.replace(/%F1/g,"&ntilde;");
+
+      var value = pares[i].substring(pos+1);
+      value = value.replace(/%C3%A1/g,"&aacute;");
+      value = value.replace(/%E1/g,"&aacute;");
+      value = value.replace(/%C3%A9/g,"&eacute;");
+      value = value.replace(/%E9/g,"&eacute;");
+      value = value.replace(/%C3%AD/g,"&iacute;");
+      value = value.replace(/%ED/g,"&iacute;");
+      value = value.replace(/%C3%B3/g,"&oacute;");
+      value = value.replace(/%F3/g,"&oacute;");
+      value = value.replace(/%C3%BA/g,"&uacute;");
+      value = value.replace(/%FA/g,"&uacute;");
+      value = value.replace(/%C3%B1/g,"&ntilde;");
+      value = value.replace(/%F1/g,"&ntilde;");
+
+      value=unescape(value);
+
+      value=value.replace(/\+/g, ' ');
+      
+      resumen+="<tr><td>"  
+      +name+"</td><td>"+value+"</td></tr>"; 
+   }
+resumen+="</table>";
+document.write(resumen);
+}
+getArgs();
+</script>
+</head>
+
+<body style="color:#663300; background-color:#FFFFCC">
+</body>
+</html>

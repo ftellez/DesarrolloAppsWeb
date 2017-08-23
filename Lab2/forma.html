@@ -1,0 +1,71 @@
+<html>
+	<title> </title>
+	<body>
+		<form action="servidor.html">
+		
+		<fieldset>
+			<legend>Datos personales </legend>
+				Nombre completo:
+				<br>
+				<input type="text" name="nombre" placeholder="Nombre" required>
+				<br>
+				Edad:
+				<br>
+				<input type="text" name="edad" placeholder="Edad" required>
+				<br>
+				Sexo:
+				<br>
+				<select name="sexo">
+					<option value="masculino"> Masculino </option>
+					<option value="femenino"> Femenino </option>
+				</select> 
+				<br>
+				Domicilio:
+				<br>
+				<input type="text" name="domicilio" placeholder="Domicilio">
+				<br>
+				Telefono (con lada):
+				<br>
+				<input type="tel" name="telefono" placeholder="Telefono" pattern="[0-9]{10}" required>
+				<br>
+				Correo electronico:
+				<br>
+				<input type="email" name="correo" placeholder="Correo electronico">
+				<br>
+		</fieldset>
+		<fieldset>
+			<legend> Estado actual de salud </legend>
+				<input type="radio" name="estado" value="excelente" checked> Excelente<br>
+				<input type="radio" name="estado" value="bueno"> Bueno<br>
+				<input type="radio" name="estado" value="regular"> Regular<br>
+				<input type="radio" name="estado" value="malo"> Malo
+		</fieldset>
+		<fieldset>
+			<legend> Enfermedades que padece o ha padecido </legend>
+				<input type="checkbox" name="presion" value="si"> Alta presion sanguinea <br>
+				<input type="checkbox" name="deformaciones" value="si"> Deformaciones oseas <br>
+				<input type="checkbox" name="dolorcabeza" value="si"> Dolor de cabeza frecuente o severo <br>
+				<input type="checkbox" name="artritis" value="si"> Artritis <br>
+				<input type="checkbox" name="articulaciones" value="si"> Dolor de articulaciones <br>
+				<input type="checkbox" name="mareos" value="si"> Mareos enfisema <br>
+				<input type="checkbox" name="hepatitis" value="si"> Problemas hepaticos <br>
+				<input type="checkbox" name="renal" value="si"> Problemas renales <br>
+				<input type="checkbox" name="asma" value="si"> Asma <br>
+				<input type="checkbox" name="diabetes" value="si"> Diabetes <br>
+		</fieldset>
+		<fieldset>
+			<legend> Protesis u otros aparatos </legend>
+				<input type="checkbox" name="dentaduras" value="si"> Dentaduras postizas <br>
+				<input type="checkbox" name="lentes" value="si"> Lentes <br>
+				<input type="checkbox" name="contacto" value="si"> Lentes de contacto <br>
+				<input type="checkbox" name="auditivos" value="si"> Aparatos auditivos <br>
+				<input type="checkbox" name="protesis" value="si"> Protesis <br>
+				Otros:<br>
+				<textarea name="otros" rows=3 cols=50> </textarea>
+		</fieldset>
+		
+		<input type="submit" value="Submit" > 
+		
+		</form>
+	</body>
+</html>

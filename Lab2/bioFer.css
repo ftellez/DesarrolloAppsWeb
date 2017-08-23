@@ -1,0 +1,60 @@
+/* ID */
+#parrafo1 {
+	font-family: 'Dosis', sans-serif;
+}
+
+#parrafo2 {
+	font-family: 'Quicksand', sans-serif;
+	border-top-style: none;
+}
+
+#parrafo3 {
+	font-family: 'Pacifico', cursive;
+}
+
+#parrafo4 {
+	font-family: 'Khula', sans-serif;
+}
+
+#parrafo5 {
+	font-family: 'Lobster Two', cursive;
+}
+
+#orderedlist {
+	position: relative;
+	left: -375px;
+}
+
+/* Class */
+.list {
+	margin-left: 350px;
+	font-size: 125%;
+}
+
+/* General */
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+h1 {
+	border-bottom-style: solid;
+}
+
+p {
+	border-top-style: dotted;
+}
+
+table{
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 200px;
+}
+
+td {
+    border: 1px solid black;
+    width: 100px;
+}

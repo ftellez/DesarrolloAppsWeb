@@ -1,0 +1,34 @@
+/* ID */
+#boldstyle {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+#checkbox {
+	margin-left: -25px;
+}
+
+/* Class */
+.titleForm1 {
+	padding-bottom: 5px;
+	font-size: 125%;
+}
+
+.radioStatus {
+	font-style: italic;
+}
+
+/* General */
+input, select {
+	margin-left: 25px;
+}
+
+fieldset {
+	padding-right: 0px;
+	border-color: purple;
+	/*margin-right: 800px; */
+}
+
+div {
+	background-color: none;
+}

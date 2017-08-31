@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="guess_style.css" />
+		
+	</head>
+	
+	<body>
+		<h1> Guessing game </h1>
+		<p> The object of this game is to guess the same number that the script is guessing. The number will range from 1 to 100. </p>
+		<span>Your Guess:</span>
+		<input name="num" type="text" size="7" />
+		<button onclick="guessNum();"> Guess... </button>
+		<button onclick="giveUp()"> GiveUp </button>
+		<br> <br>
+		<span> #-Guesses: </span>
+		<input name="numInt" type="text" size="4" />
+		<span id="imgSec"></span>
+		<!--<button onclick="hello()"> Hello </button> -->
+		<script type="text/javascript" src="guessScript.js"> </script>
+	</body>
+</html>

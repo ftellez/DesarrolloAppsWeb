@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<style>
+td {width:95px;text-align:center}
+</style>
+<script language="Javascript" type="text/javascript" src="inventario.js"></script>	
+<title>Inventario</title>
+</head>
+<body onload="showInv()">
+<h1>INVENTARIO</h1>
+<table>
+<tr>
+<th>Artículo</th>
+<th>Cantidad</th>
+<th>Incrementar</th>
+<th>Decrementar</th>
+</tr>
+
+<tr>
+<td>Focos</td>
+<td id="focos" onclick="modif(this)">0</td>
+<td><input type="button" value="agregar uno" onclick="inc('focos')" /></td>
+<td><input type="button" value="restar uno" onclick="dec('focos')" /></td>
+</tr>
+
+<tr>
+<td>Fusibles</td>
+<td id="fusibles" onclick="modif(this)">0</td>
+<td><input type="button" value="agregar uno" onclick="inc('fusibles')" /></td>
+<td><input type="button" value="restar uno" onclick="dec('fusibles')" /></td>
+</tr>
+
+<tr>
+<td>Switches</td>
+<td id="switches" onclick="modif(this)">0</td>
+<td><input type="button" value="agregar uno" onclick="inc('switches')" /></td>
+<td><input type="button" value="restar uno" onclick="dec('switches')" /></td>
+</tr>
+
+</table>
+</body></html>

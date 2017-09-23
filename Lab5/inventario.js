@@ -1,4 +1,4 @@
-var isInput = false;
+var isInput;
 
 function showInv() {
 	// Leer cookies
@@ -49,10 +49,12 @@ function saveValue(celda, valor){
     now.setMonth(now.getMonth() + 1);
 	var cookies = celda.id + "=" + valor + "; expires=" + now.toGMTString() + ";";
 	document.cookie = cookies;
+	
 	if(isInput){
 		celda.removeChild(celda.childNodes[0]);
 		celda.innerHTML = valor;
 	}
+	
 	alert(cookies);
 }
 
